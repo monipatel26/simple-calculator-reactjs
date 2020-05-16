@@ -1,0 +1,89 @@
+html, body, #root, .App{
+  height: 100%;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #66666E;
+}
+
+.calculator{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header div{
+  margin: 50px 0;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  display: inline-block;
+  cursor: default;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out 0.2s;
+}
+
+.header div:hover{
+  top: -20px;
+}
+
+.calc-parent table {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: inherit;
+  border-radius: 10px;
+  border-spacing: 3px;
+  border: none;
+}
+
+.calc-parent table td{
+  text-align: center;
+  background-color: #E6E6E9;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 0;
+}
+
+.calc-parent table td:active {
+  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.input-buttons{
+  background: transparent;
+  border: 0;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  padding: .75rem;
+}
+
+.input-buttons:focus{
+  outline: none;
+}
+
+.user-output {
+  width: 397px;
+  text-align: right;
+  margin: 0 auto;
+  background-color: #E6E6E9;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 20px 10px;
+  border-radius: 6px;
+}
+
+.user-output .input-expr {
+  height: 24px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
+.user-output .output-res{
+  height: 34px;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: bold;
+  margin: 15px 0;
+}
